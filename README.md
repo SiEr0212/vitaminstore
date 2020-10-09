@@ -1,3 +1,8 @@
+## This is a project to learn to manage Complex Interactions in React :arrows_counterclockwise: arrows_clockwise :arrows_clockwise: :smiley:
+
+I want to learn how to use React-Interactions using states and some useful third-party libraries.
+
+## General Info:
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
