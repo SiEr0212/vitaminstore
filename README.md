@@ -1,4 +1,4 @@
-## This is a project to learn to manage Complex Interactions in React :arrows_counterclockwise: arrows_clockwise :arrows_clockwise: :smiley:
+## This is a project to learn to manage Complex Interactions in React :arrows_counterclockwise: :arrows_clockwise: :smiley:
 
 I want to learn how to use React-Interactions using states and some useful third-party libraries.
 
