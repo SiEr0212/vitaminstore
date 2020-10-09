@@ -5,6 +5,15 @@ import './App.css';
 class App extends Component {
   constructor(props){
     super(props);
+    this.state = {
+      toggleLogo: true,
+    }
+    this.toggleLogo = this.toggleLogo.bind(this);
+  }
+  toggleLogo(event) {
+    this.setState((prevState) => ({
+      toggleLogo: !prevState.toggleLogo
+    }));
   }
   render() {
     return (
