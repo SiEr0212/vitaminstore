@@ -19,7 +19,10 @@ class App extends Component {
     return (
       <div className="Aropsp">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} 
+            className={this.state.toggleLogo ?'static-logo' : 'animated-logo'}
+            alt="logo" 
+            onClick={this.toggleLogo}/>
           <h1 className="App-title">Welcome to React</h1>
         </header>
       </div>
