@@ -9,18 +9,45 @@ class App extends Component {
     this.state = {
       toggleLogo: true,
       cards: [
-        {id: 1
+        {id: 0,
+          animation: 'card'
         },
-        {id: 2
-        },{id: 3}, {id: 4},{id: 5},{id: 6},],
+        {id: 1,
+          animation: 'card'
+        },
+        {id: 2,
+          animation: 'card'
+        }, 
+        {id: 3,
+          animation: 'card'
+        },
+        {id: 4,
+          animation: 'card'
+        },
+        {id: 5,
+          animation: 'card'
+        },],
     }
     this.toggleLogo = this.toggleLogo.bind(this);
+    this.clickCard = this.clickCard.bind(this);
+
   }
   toggleLogo(event) {
     this.setState((prevState) => ({
       toggleLogo: !prevState.toggleLogo
     }));
   }
+
+  clickCard(card) {
+    let cards = this.state.cards;
+    cards[card.id].animation = 'card animated zoomOut';
+    console.log(cards);
+    
+    this.setState({
+      cards,
+    });
+  }
+  
   render() {
     return (
       <div className="Aropsp">
@@ -36,7 +63,7 @@ class App extends Component {
         <div className="Grid">
         {
           this.state.cards.map((card) =>(
-            <Card duration={150} key={card.id}/>
+            <Card duration={150} key={card.id} card={card} clickCard={this.clickCard}/>
 
           ))
         }
