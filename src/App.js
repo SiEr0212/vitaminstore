@@ -8,7 +8,11 @@ class App extends Component {
     super(props);
     this.state = {
       toggleLogo: true,
-      cards: [{id: 1},{id: 2},{id: 3}, {id: 4},{id: 5},{id: 6},],
+      cards: [
+        {id: 1
+        },
+        {id: 2
+        },{id: 3}, {id: 4},{id: 5},{id: 6},],
     }
     this.toggleLogo = this.toggleLogo.bind(this);
   }
@@ -22,9 +26,11 @@ class App extends Component {
       <div className="Aropsp">
         <header className="App-header">
           <img src={logo} 
-            className={this.state.toggleLogo ?'static-logo' : 'animated-logo'}
+            className={this.state.toggleLogo ?'static-logo' : 'static-logo animated jello'}
             alt="logo" 
-            onClick={this.toggleLogo}/>
+            onMouseEnter={this.toggleLogo}
+            onMouseLeave={this.toggleLogo}
+            />
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <div className="Grid">
