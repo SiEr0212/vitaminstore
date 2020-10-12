@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import logo from './logo.png';
 import './App.css';
 import Card from './components/Card';
+import Loading from './components/Loading';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
       toggleLogo: true,
+      loading: true,
       cards: [
         {id: 0,
           animation: 'card'
@@ -30,8 +32,12 @@ class App extends Component {
     }
     this.toggleLogo = this.toggleLogo.bind(this);
     this.clickCard = this.clickCard.bind(this);
-
   }
+ 
+  componentDidMount() {
+    setTimeout(()=> this.setState({loading: false}), 3000);
+  }
+
   toggleLogo(event) {
     this.setState((prevState) => ({
       toggleLogo: !prevState.toggleLogo
@@ -60,7 +66,9 @@ class App extends Component {
             />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <div className="Grid">
+        {
+          this.state.loading ? <Loading /> :
+          <div className="Grid">
         {
           this.state.cards.map((card) =>(
             <Card duration={150} key={card.id} card={card} clickCard={this.clickCard}/>
@@ -68,6 +76,8 @@ class App extends Component {
           ))
         }
         </div>
+        }
+        
       </div>
     );
   }
