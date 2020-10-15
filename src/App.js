@@ -3,6 +3,7 @@ import logo from './logo.png';
 import './App.css';
 import Card from './components/Card';
 import Loading from './components/Loading';
+import Navigation from './components/Navigation';
 
 class App extends Component {
   constructor(props){
@@ -32,6 +33,8 @@ class App extends Component {
     }
     this.toggleLogo = this.toggleLogo.bind(this);
     this.clickCard = this.clickCard.bind(this);
+    this.openNav = this.openNav.bind(this);
+    this.closeNav = this.closeNav.bind(this);
   }
  
   componentDidMount() {
@@ -53,7 +56,17 @@ class App extends Component {
       cards,
     });
   }
+
+  openNav() {
+    document.getElementById('myNav').style.width = "100%";
+  }
+
+  closeNav() {
+    document.getElementById('myNav').style.width = "0%";
+
+  }
   
+
   render() {
     return (
       <div className="Aropsp">
@@ -63,8 +76,9 @@ class App extends Component {
             alt="logo" 
             onMouseEnter={this.toggleLogo}
             onMouseLeave={this.toggleLogo}
+            onClick={this.openNav}
             />
-          <h1 className="App-title">Welcome to React</h1>
+         <Navigation closeNav={this.closeNav} />
         </header>
         {
           this.state.loading ? <Loading /> :
