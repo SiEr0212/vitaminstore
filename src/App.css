@@ -10,7 +10,8 @@ html, body {
 }
 
 .Grid {
-  margin: 5%;
+  margin-left: 5%;
+  margin-right: -2%;/*not yet fully repomnsive, davor nur margin 5%*/
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
