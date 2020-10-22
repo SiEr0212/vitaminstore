@@ -88,7 +88,7 @@ class App extends Component {
         {this.state.loading ? (
           <Loading />
         ) : (
-          <div className="Grid">
+          <div className="Grid animated bounceInUp">
             {this.state.cards.map((card) => (
               <Card
                 duration={150}
