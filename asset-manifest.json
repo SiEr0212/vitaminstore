@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/vitaminstore/static/css/main.422efe03.chunk.css",
+    "main.js": "/vitaminstore/static/js/main.43239b35.chunk.js",
+    "main.js.map": "/vitaminstore/static/js/main.43239b35.chunk.js.map",
+    "runtime-main.js": "/vitaminstore/static/js/runtime-main.b468ab06.js",
+    "runtime-main.js.map": "/vitaminstore/static/js/runtime-main.b468ab06.js.map",
+    "static/js/2.54fa1253.chunk.js": "/vitaminstore/static/js/2.54fa1253.chunk.js",
+    "static/js/2.54fa1253.chunk.js.map": "/vitaminstore/static/js/2.54fa1253.chunk.js.map",
+    "index.html": "/vitaminstore/index.html",
+    "precache-manifest.63e6e4b76da3cd3524f846b65cc772b2.js": "/vitaminstore/precache-manifest.63e6e4b76da3cd3524f846b65cc772b2.js",
+    "service-worker.js": "/vitaminstore/service-worker.js",
+    "static/css/main.422efe03.chunk.css.map": "/vitaminstore/static/css/main.422efe03.chunk.css.map",
+    "static/js/2.54fa1253.chunk.js.LICENSE.txt": "/vitaminstore/static/js/2.54fa1253.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/vitaminstore/static/media/logo.a68903b3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b468ab06.js",
+    "static/js/2.54fa1253.chunk.js",
+    "static/css/main.422efe03.chunk.css",
+    "static/js/main.43239b35.chunk.js"
+  ]
+}
